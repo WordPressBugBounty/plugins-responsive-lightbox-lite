@@ -1,0 +1,1 @@
+# plugins-responsive-lightbox-lite
