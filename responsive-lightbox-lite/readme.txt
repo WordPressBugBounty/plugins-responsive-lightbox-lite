@@ -4,10 +4,10 @@ Author: subhansanjaya
 Author URI: http://weaveapps.com
 Plugin URI: http://wordpress.org/plugins/responsive-lightbox-lite/
 Donate link:https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BXBCGCKDD74UE
-Tags: responsive Lightbox, Lightbox, Nivo Lightbox, pop up, modal window, modal dialog, pop-up, light box, lightbox for youtube, nivo, wp lightbox,iframe pop up,pop up, wordpress lightbox
+Tags: responsive Lightbox, Lightbox, Nivo Lightbox, pop up, modal dialog
 Requires at least: 4.5
-Tested up to: 6.2
-Stable tag: 1.3.4
+Tested up to: 6.8
+Stable tag: 1.3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -127,6 +127,10 @@ rel="lightbox" data-lightbox-type="ajax"
 rel="lightbox" data-lightbox-type="inline"
 
 ==changelog==
+**Version 1.3.5**
+
+Tested with latest version of WordPress
+
 **Version 1.3.2**
 
 Added missing script file.

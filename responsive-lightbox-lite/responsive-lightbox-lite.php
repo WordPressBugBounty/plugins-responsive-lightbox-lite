@@ -3,7 +3,7 @@
 *	Plugin Name: Responsive Lightbox
 *	Description: This plugin offers a nice and elegant way to add Lightbox functionality for images, html content and media on your webpages.  
 *	Author: subhansanjaya
-*	Version: 1.3.4
+*	Version: 1.3.5
 *	Plugin URI: http://wordpress.org/plugins/responsive-lightbox-lite/
 *	Author URI: http://weaveapps.com
 *	Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BXBCGCKDD74UE
@@ -34,6 +34,8 @@ class Responsive_Lightbox_Lite {
 	private $options = array();
 	private $tabs = array();
 	private $gallery_no = 0;
+	public $choices;
+	public $loading_places;
 
 	public function __construct() {
 
@@ -45,10 +47,10 @@ class Responsive_Lightbox_Lite {
 		add_action('admin_init', array(&$this, 'register_settings'));
 
 		//add text domain for localization
-		add_action('plugins_loaded', array(&$this, 'load_textdomain'));
+		add_action('init', array(&$this, 'load_textdomain'));
 
 		//load defaults
-		add_action('plugins_loaded', array(&$this, 'load_defaults'));
+		add_action('init', array(&$this, 'load_defaults'));
 
 		//update plugin version
 		update_option('responsive_lightbox_lite_version', $this->defaults['version'], '', 'no');
